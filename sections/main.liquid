@@ -1,0 +1,593 @@
+{{ 'additional.scss.css' | asset_url | stylesheet_tag }}
+<div data-section-id="{{ section.id }}" data-section-type="hero-section">
+    <div class="main-section-container">
+        <div class="main-section-parent ">
+            <img class="main-section-mobile-img" src="{{ 'hero-image.png' | asset_url }}"/>
+           <div class="main-section-top">
+               <h1>SHAKE. STIR. SIP.</h1>
+               <p>Liquor Lab is a hands-on, interactive craft beer, wine, spirits<br/> and cocktail event space where guests can experience<br/> custom beverages like never before.</p>
+               <div class="main-section-t-d">
+                   <a onclick="gotoFunction()"><h3>LEARN MORE</h3></a>
+                   <a href="/"><div>VIEW CLASSES</div></a>
+               </div>
+           </div>
+        </div>
+        <div class="main-section-top-mobile">
+            <p>Liquor Lab is a hands-on, interactive craft beer, wine, spirits<br/> and cocktail event space where guests can experience<br/> custom beverages like never before.</p>
+            <div class="main-section-t-d">
+                <a href="/"><h3>LEARN MORE</h3></a>
+                <a href="/"><div class="view-class-mobile">VIEW CLASSES</div></a>
+            </div>
+        </div>
+        <div class="main-section-third-parent">
+            <div class="main-section-third">
+                <div class="main-section-third-child">
+                    <h1>A SOCIAL<br/>MIXOLOGY<br/>EXPERIENCE</h1>
+                    <p>Think of this as a cooking class, but solely for specialty sips. While<br/>
+                        learning about recipe history and preparation, attendees shake,<br/> stir and sip delicious drinks. A category-specific professional leads<br/>
+                        each instructional session, as guests follow along step-by-step<br/>
+                        and discover the evening’s focus in a fun and exciting atmosphere.</p>
+                    <div class="d-flex main-section-mobile-button">
+                        <div class="partial-button-parent1 partial-style-1">
+                            <a href="https://liquorlabnyc.com/collections/classes">
+                                <div class="partial-button">
+                                <span>NYC CLASSES</span>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="partial-button-parent1 partial-blue">
+                            <a href="https://liquorlabnashville.com/collections/classes">
+                                <div class="partial-button ">
+                                    <span>NASHVILLE CLASSES</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <img src={{ 'mixology-drinks.png' | asset_url }}>
+            </div>
+         </div>
+
+        <div class="main-section-fourth-fifth-divide"></div>
+        <div class="main-section-fifth">
+            <div class="main-section-fifth-child">
+                <p>PRIVATE EVENTS</p>
+                <h1>BUSINESS OR PLEASURE?
+                    <br/>ON-SITE OR OFF?</h1>
+                <h2>EVERY LIQUORLAB EVENT IS <br/>UNIQUE IS COMPLETELY<br/> UNIQUE - <strong>BECAUSE YOU ARE</strong></h2>
+                <div class="d-flex">
+                    <a href="https://liquorlabnyc.com/pages/private-events"><div class="partial-button-parent partial-style-2">
+                        <div class="partial-button partial-button-size-6">
+                            <span>NYC</span>
+                        </div>
+                    </div></a>
+                    <a href="https://liquorlabnashville.com/pages/private-events"><div class="partial-button-parent partial-blue1">
+                        <div class="partial-button">
+                            <span>NASHVILLE</span>
+                        </div>
+                        </div></a>
+                </div>
+                <a><div class="fifth-mobile-button">LEARN MORE</div></a>
+            </div>
+        </div>
+        <div id='scroll-second-section' class="main-section-sixth">
+            <img src="{{ 'dollar-cocktail-club.png' | asset_url }}">
+            <div class="main-section-sixth-right">
+                <h3>TAKE YOUR LIQUOR<br/>
+                    LAB SKILLS HOME WITH</h3>
+                <h1>DOLLAR COCKTAIL CLUB</h1>
+                <p>Have high quality ingredients with easy-to<br/>follow instructions delivered right to your door. </p>
+                <a><div class="sixth-mobile-button">LEARN MORE</div></a>
+                <div class="partial-button-parent partial-style-2">
+                    <div class="partial-button">
+                        <span>LEARN MORE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section-seventh">
+            <div class="main-section-seventh-child">
+                <h1>BARTENDER’S CORNER</h1>
+                <p>Stories, recommendations, and advice from the world’s best cocktail<br/> experts.</p>
+                <div class="partial-button-parent partial-style-1 partial-style-3">
+                    <div class="partial-button">
+                        <span>VIEW</span>
+                    </div>
+                </div>
+                <a><div class="sixth-mobile-button">LEARN MORE</div></a>
+            </div>
+            <img src="{{ 'bartenders-corner.png' | asset_url }}"/>
+        </div>
+        <div class="main-section-nineth">
+          <div class="main-section-nineth-top">
+            <h1>OUR LOCATIONS</h1>
+            <h2>NYC and Nashville with more locations coming soon</p>
+          </div>
+          <div class="d-flex main-section-nineth-bottom">
+            <div class="nine-section-custom-image-style">
+                <div class="partial-button">
+                    <span class="nine-image-first">NYC</span>
+                </div>
+            </div>
+            <div class="nine-section-custom-image-style-1">
+                <div class="partial-button">
+                    <span class="nine-image-second">NASHVILLE</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section-second">
+            <div class="main-section-second-images">
+                <img src={{'main2-1.png' | asset_url}}>
+                <img src={{'main2-2.png' | asset_url}}>
+                <img src={{'main2-3.png' | asset_url}}>
+            </div>
+            <div class="main-section-second-bar">
+                <img src={{ 'main2-bar.png' | asset_url }}>
+            </div>
+            <div class="main-section-second-texts">
+                <p>“Cocktail School Lets Novices Be the Bartender”</p>
+                <p>“Learn how to make margaritas, carve whiskey ice or taste wine in classes led by booze buffs”</p>
+                <p>“Liquor Lab SoHo enables the bartender in all of us through a hands-on, interactive craft beer, wine, spirits and cocktail event space.”</p>
+            </div>
+            <div class="main-section-second-right-bar">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="main-section-second-mobile">
+            <img class="main-section-second-bar" src="{{ 'mobile_right-bar.png' | asset_url }}"/>
+            <div class="main-section-second-images">
+                <img class="second-section-first-image" src={{'main2-1.png' | asset_url}}><p>“Cocktail School Lets Novices Be the Bartender”</p>
+                <img src={{'main2-2.png' | asset_url}}>
+                <p>“Learn how to make margaritas, carve whiskey ice or taste wine in classes led by booze buffs”</p>
+                <img src={{'main2-3.png' | asset_url}}>
+                <p>“Liquor Lab SoHo enables the bartender in all of us through a hands-on, interactive craft beer, wine, spirits and cocktail event space.”</p>
+            </div>
+            <div class="main-section-second-right-bar">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="main-section-fourth">
+            <div class="main-fourth-image">
+                <img src="{{ 'customer-testiomonials.png' | asset_url }}">
+            </div>
+            <div class="main-section-fourth-child">
+                <h1>WHAT OUR CUSTOMERS<br/>
+                    ARE SAYING</h1>
+                {% include 'main-section-customers' %}
+                <div class="main-section-fourth-testimate"></div>
+            </div>
+        </div>
+        <div class="main-section-eighth">
+            <h1>#LIQUORLAB</h1>
+        </div>
+    </div>
+</div>
+<script>
+  function gotoFunction() {
+    var element = document.getElementById("scroll-second-section");
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+</script>
+{% schema %}
+    {
+    "name": {
+    "de": "Foto mit überlegtem Text",
+    "en": "my first section",
+    "es": "Imagen con texto",
+    "fr": "Image avec texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "nl": "Foto met tekstoverlay",
+    "pt-BR": "Imagem com texto",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加的圖片"
+    },
+    "class": "index-section index-section--flush",
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": {
+    "de": "Foto",
+    "en": "Image",
+    "es": "Imagen",
+    "fr": "Image",
+    "it": "Immagine",
+    "ja": "画像",
+    "nl": "Afbeelding",
+    "pt-BR": "Imagem",
+    "zh-CN": "图片",
+    "zh-TW": "圖片"
+    }
+    },
+    {
+    "type": "select",
+    "id": "alignment",
+    "label": {
+    "de": "Fotoausrichtung",
+    "en": "Image alignment",
+    "es": "Alineación de imagen",
+    "fr": "Alignement de l'image",
+    "it": "Allineamento immagine",
+    "ja": "画像アラインメント",
+    "nl": "Afbeelding uitlijnen",
+    "pt-BR": "Alinhamento da imagem",
+    "zh-CN": "图片对齐方式",
+    "zh-TW": "圖片對齊"
+    },
+    "default": "center",
+    "options": [
+    {
+    "value": "top",
+    "label": {
+    "de": "Oben",
+    "en": "Top",
+    "es": "Superior",
+    "fr": "Haut",
+    "it": "In alto",
+    "ja": "上",
+    "nl": "Boven",
+    "pt-BR": "Acima",
+    "zh-CN": "顶部",
+    "zh-TW": "頂部"
+    }
+    },
+    {
+    "value": "center",
+    "label": {
+    "de": "Mitte",
+    "en": "Middle",
+    "es": "Al medio",
+    "fr": "Milieu",
+    "it": "Al centro",
+    "ja": "中央",
+    "nl": "Midden",
+    "pt-BR": "Meio",
+    "zh-CN": "中间",
+    "zh-TW": "中央"
+    }
+    },
+    {
+    "value": "bottom",
+    "label": {
+    "de": "Unten",
+    "en": "Bottom",
+    "es": "Inferior",
+    "fr": "Bas",
+    "it": "In basso",
+    "ja": "下",
+    "nl": "Onder",
+    "pt-BR": "Abaixo",
+    "zh-CN": "底部",
+    "zh-TW": "底部"
+    }
+    }
+    ]
+    },
+    {
+    "type": "select",
+    "id": "hero_layout",
+    "label": {
+    "de": "Layout",
+    "en": "Layout",
+    "es": "Diseño",
+    "fr": "Mise en page",
+    "it": "Layout",
+    "ja": "レイアウト",
+    "nl": "Indeling",
+    "pt-BR": "Layout",
+    "zh-CN": "布局",
+    "zh-TW": "版面配置"
+    },
+    "default": "full_width",
+    "options": [
+    {
+    "label": {
+    "de": "Volle Breite",
+    "en": "Full width",
+    "es": "Ancho completo",
+    "fr": "Pleine largeur",
+    "it": "Intera larghezza",
+    "ja": "全幅",
+    "nl": "Volledige breedte",
+    "pt-BR": "Largura completa",
+    "zh-CN": "全宽",
+    "zh-TW": "全寬度"
+    },
+    "value": "full_width"
+    },
+    {
+    "label": {
+    "de": "Feste Breite",
+    "en": "Fixed width",
+    "es": "Ancho fijo",
+    "fr": "Largeur fixe",
+    "it": "Larghezza fissa",
+    "ja": "固定幅",
+    "nl": "Vaste breedte",
+    "pt-BR": "Largura fixa",
+    "zh-CN": "固定宽度",
+    "zh-TW": "固定寬度"
+    },
+    "value": "fixed_width"
+    }
+    ]
+    },
+    {
+    "type": "select",
+    "id": "hero_size",
+    "label": {
+    "de": "Bereichs-Höhe",
+    "en": "Section height",
+    "es": "Altura de la sección",
+    "fr": "Hauteur de la section",
+    "it": "Altezza sezione",
+    "ja": "セクションの高さ",
+    "nl": "Sectiehoogte",
+    "pt-BR": "Altura da seção",
+    "zh-CN": "分区高度",
+    "zh-TW": "區塊高度"
+    },
+    "default": "medium",
+    "options": [
+    {
+    "label": {
+    "de": "An Bild anpassen",
+    "en": "Adapt to image",
+    "es": "Adaptar a la imagen",
+    "fr": "S'adapter à l'image",
+    "it": "Adatta all'immagine",
+    "ja": "画像に適応する",
+    "nl": "Aanpassen aan afbeelding",
+    "pt-BR": "Adaptar à imagem",
+    "zh-CN": "适应图片",
+    "zh-TW": "配合圖片"
+    },
+    "value": "adapt"
+    },
+    {
+    "label": {
+    "de": "Extra klein",
+    "en": "Extra Small",
+    "es": "Extra pequeña",
+    "fr": "Très petite",
+    "it": "Molto piccola",
+    "ja": "極小",
+    "nl": "Extra klein",
+    "pt-BR": "Extra pequeno",
+    "zh-CN": "特小",
+    "zh-TW": "超小型"
+    },
+    "value": "x-small"
+    },
+    {
+    "label": {
+    "de": "Klein",
+    "en": "Small",
+    "es": "Pequeña",
+    "fr": "Petite",
+    "it": "Small",
+    "ja": "小",
+    "nl": "Klein",
+    "pt-BR": "Pequeno",
+    "zh-CN": "小",
+    "zh-TW": "小型"
+    },
+    "value": "small"
+    },
+    {
+    "label": {
+    "de": "Mitte",
+    "en": "Medium",
+    "es": "Mediana",
+    "fr": "Moyenne",
+    "it": "Medium",
+    "ja": "中",
+    "nl": "Gemiddeld",
+    "pt-BR": "Médio",
+    "zh-CN": "中等",
+    "zh-TW": "中等"
+    },
+    "value": "medium"
+    },
+    {
+    "label": {
+    "de": "Groß",
+    "en": "Large",
+    "es": "Grande",
+    "fr": "Grande",
+    "it": "Large",
+    "ja": "大",
+    "nl": "Groot",
+    "pt-BR": "Grande",
+    "zh-CN": "大",
+    "zh-TW": "大型"
+    },
+    "value": "large"
+    },
+    {
+    "label": {
+    "de": "Extra groß",
+    "en": "Extra Large",
+    "es": "Extra grande",
+    "fr": "Très grande",
+    "it": "Molto grande",
+    "ja": "特大",
+    "nl": "Extra groot",
+    "pt-BR": "Extra grande",
+    "zh-CN": "特大",
+    "zh-TW": "超大型"
+    },
+    "value": "x-large"
+    }
+    ]
+    },
+    {
+    "type": "select",
+    "id": "text_size",
+    "label": {
+    "de": "Textgröße",
+    "en": "Text size",
+    "es": "Tamaño del texto",
+    "fr": "Taille du texte",
+    "it": "Dimensione testo",
+    "ja": "文字サイズ",
+    "nl": "Tekengrootte",
+    "pt-BR": "Tamanho do texto",
+    "zh-CN": "文本大小",
+    "zh-TW": "文字尺寸"
+    },
+    "default": "medium",
+    "options": [
+    {
+    "label": {
+    "de": "Mitte",
+    "en": "Medium",
+    "es": "Mediano",
+    "fr": "Moyenne",
+    "it": "Medium",
+    "ja": "中",
+    "nl": "Gemiddeld",
+    "pt-BR": "Médio",
+    "zh-CN": "中等",
+    "zh-TW": "中等"
+    },
+    "value": "medium"
+    },
+    {
+    "label": {
+    "de": "Groß",
+    "en": "Large",
+    "es": "Grande",
+    "fr": "Grande",
+    "it": "Large",
+    "ja": "大",
+    "nl": "Groot",
+    "pt-BR": "Grande",
+    "zh-CN": "大",
+    "zh-TW": "大型"
+    },
+    "value": "large"
+    }
+    ]
+    },
+    {
+    "type": "text",
+    "id": "title",
+    "label": {
+    "de": "Titel",
+    "en": "Heading",
+    "es": "Título",
+    "fr": "En-tête",
+    "it": "Heading",
+    "ja": "見出し",
+    "nl": "Kop",
+    "pt-BR": "Título",
+    "zh-CN": "标题",
+    "zh-TW": "標題"
+    },
+    "default": {
+    "de": "Foto mit überlegtem Text",
+    "en": "Image with text overlay",
+    "es": "Imagen con texto",
+    "fr": "Image avec superposition de texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "nl": "Foto met tekstoverlay",
+    "pt-BR": "Imagem com sobreposição de texto",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加的圖片"
+    }
+    },
+    {
+    "type": "richtext",
+    "id": "text",
+    "label": {
+    "de": "Text",
+    "en": "Text",
+    "es": "Texto",
+    "fr": "Texte",
+    "it": "Testo",
+    "ja": "テキスト",
+    "nl": "Tekst",
+    "pt-BR": "Texto",
+    "zh-CN": "文本",
+    "zh-TW": "文字"
+    },
+    "default": {
+    "de": "<p>Nutzen Sie überlegten Text, um Kunden über Ihre Marke zu informieren. Wählen Sie Fotos und Text aus, die zu Ihrer Marke passen.</p>",
+    "en": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+    "es": "<p>Usa el texto superpuesto para darles información a tus clientes sobre tu marca. Selecciona imágenes y textos que se relacionen con tu estilo e historia.</p>",
+    "fr": "<p>Utilisez la superposition de texte pour donner un aperçu de votre marque à vos clients. Utilisez une image et du texte qui se rapportent au style et à l'histoire de votre marque.</p>",
+    "it": "<p>Utilizza il testo in sovrapposizione per dare ai clienti informazioni sul tuo brand. Seleziona immagini e testo legati al tuo stile e alla tua storia.</p>",
+    "ja": "<p>オーバーレイテキストを使用して、お客様があなたのブランドについてよく理解できるようにします。あなたのスタイルやストーリーに関連する画像やテキストを選択してください。</p>",
+    "nl": "<p>Gebruik overlay-tekst om uw klanten inzicht te geven in uw merk. Selecteer afbeeldingen en tekst die betrekking hebben op uw stijl en verhaal.</p>",
+    "pt-BR": "<p>Use o texto de sobreposição para apresentar informações sobre sua marca aos clientes. Selecione imagens e textos que reflitam seu estilo e sua história.</p>",
+    "zh-CN": "<p>使用叠加文本让客户深入了解您的品牌。选择与您的风格和故事相关的图片和文本。</p>",
+    "zh-TW": "<p>運用文字疊加讓客戶更加瞭解您的品牌。選擇與您風格和品牌故事相關的圖像和文字。</p>"
+    }
+    },
+    {
+    "type": "text",
+    "id": "button_label",
+    "label": {
+    "de": "Button-Etikett",
+    "en": "Button label",
+    "es": "Etiqueta de botón",
+    "fr": "Texte du bouton",
+    "it": "Etichetta pulsante",
+    "ja": "ボタンラベル",
+    "nl": "Knoplabel",
+    "pt-BR": "Etiqueta do botão",
+    "zh-CN": "按钮标签",
+    "zh-TW": "按鈕標籤"
+    }
+    },
+    {
+    "type": "url",
+    "id": "button_link",
+    "label": {
+    "de": "Button-Etikett",
+    "en": "Button link",
+    "es": "Enlace de botón",
+    "fr": "Lien du bouton",
+    "it": "Link pulsante",
+    "ja": "ボタンリンク",
+    "nl": "Knoplink",
+    "pt-BR": "Link do botão",
+    "zh-CN": "按钮链接",
+    "zh-TW": "按鈕連結"
+    }
+    }
+    ],
+    "presets": [
+    {
+    "name": {
+    "de": "Foto mit überlegtem Text",
+    "en": "my first section",
+    "es": "Imagen con texto",
+    "fr": "Image avec superposition de texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "nl": "Foto met tekstoverlay",
+    "pt-BR": "Imagem com sobreposição de texto",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加的圖片"
+    },
+    "category": {
+    "de": "Foto",
+    "en": "image test",
+    "es": "Imagen",
+    "fr": "Image",
+    "it": "Immagine",
+    "ja": "画像",
+    "nl": "Afbeelding",
+    "pt-BR": "Imagem",
+    "zh-CN": "图片",
+    "zh-TW": "圖片"
+    }
+    }
+    ]
+    }
+{% endschema %}
