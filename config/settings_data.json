@@ -2,8 +2,8 @@
   "current": {
     "color_text": "#3d4246",
     "color_body_text": "#69727b",
-    "color_sale_text": "#CA9543",
-    "color_button": "#CA9543",
+    "color_sale_text": "#ca9543",
+    "color_button": "#ca9543",
     "color_button_text": "#ffffff",
     "color_small_button_text_border": "#3d4246",
     "color_text_field_text": "#000000",
@@ -299,6 +299,213 @@
           "button_label": "",
           "button_link": ""
         }
+      },
+      "about-header": {
+        "type": "about-header",
+        "settings": {
+          "about-image": "shopify:\/\/shop_images\/Screen_Shot_2018-06-11_at_1.27.22_PM_copy.png",
+          "title": "ABOUT LIQUOR LAB",
+          "description1": "Located at 138 Wooster St. in the heart of Soho, Liquor Laboratory – best known as Liquor Lab – is a hands-on, interactive craft beer, wine, spirits and cocktail event space where guests can experience custom beverages like never before.",
+          "about_text1": "Think of Liquor Lab as a cooking class, but solely for specialty sips. While learning about recipe history and preparation, attendees shake, stir and sip delicious drinks. A category-specific professional leads each instructional session, as guests follow along step-by-step and discover the evening’s focus in a fun and exciting atmosphere.",
+          "about_text2": "Liquor Lab encourages socializing with friends and meeting new people. During the tutorial, there are opportunities to interact with the class leader and win prizes."
+        }
+      },
+      "about-main": {
+        "type": "about-main",
+        "blocks": {
+          "1563907257508": {
+            "type": "slide",
+            "settings": {
+              "filter-text": "FEATURED",
+              "member-name": "FREDDIE SARKIS",
+              "description": "Chief Cocktail Officer",
+              "content": "Former National Brand Ambassador for Beefeater Gin and Plymouth Gin. Opened the iconic Sable Kitchen and Bar, Celeste, and The Broken Shaker Chicago.",
+              "slide_img": "shopify:\/\/shop_images\/Owen1.png"
+            }
+          },
+          "1563907342411": {
+            "type": "slide",
+            "settings": {
+              "filter-text": "FREDDIE SARKIS",
+              "member-name": "Elayne Duff",
+              "description": "Director of trade development.",
+              "content": "Former Diageo master mixologist, 1st graduating class of B.A.R. program in NY, appeared numerous times as an expert on the popular TV show Bar Rescue.",
+              "slide_img": "shopify:\/\/shop_images\/instagram-image-2.png"
+            }
+          },
+          "1563907417771": {
+            "type": "slide",
+            "settings": {
+              "filter-text": "FREDDIE SARKIS",
+              "member-name": "Chris Bidmead",
+              "description": "Chief Operation Officer",
+              "content": "Beverage director at The Bar Room, co-founder of Bar Methods, beverage consultant and program director at numerous bars.",
+              "slide_img": "shopify:\/\/shop_images\/instagram-image-2.png"
+            }
+          },
+          "1563907485908": {
+            "type": "slide",
+            "settings": {
+              "filter-text": "FREDDIE SARKIS",
+              "member-name": "Jim Ryan",
+              "description": "Former National Brand Ambassador of Hendrick’s Gin.",
+              "content": "",
+              "slide_img": "shopify:\/\/shop_images\/8OpRmPoZ.jpeg"
+            }
+          },
+          "1563977441064": {
+            "type": "filterText",
+            "settings": {
+              "filter_text": "FEATURED"
+            }
+          },
+          "1563977456476": {
+            "type": "filterText",
+            "settings": {
+              "filter_text": "FREDDIE SARKIS"
+            }
+          }
+        },
+        "block_order": [
+          "1563907257508",
+          "1563907342411",
+          "1563907417771",
+          "1563907485908",
+          "1563977441064",
+          "1563977456476"
+        ],
+        "settings": {}
+      },
+      "events-header": {
+        "type": "events-header",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "events-select-location": {
+        "type": "events-select-location",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "events-list-item": {
+        "type": "events-list-item",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "event-template": {
+        "type": "event-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "enable_payment_button": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": true
+        }
+      },
+      "cart-template-custom": {
+        "type": "cart-template-custom",
+        "settings": {
+          "cart_notes_enable": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "blog-custom-header": {
+        "type": "blog-custom-header",
+        "settings": {
+          "blog-image": "shopify:\/\/shop_images\/Owen1.png",
+          "title": "BARTENDER’S CORNER",
+          "description": "Stories from our world renowned bartenders",
+          "blog_image_text": "Bartender of the Month"
+        }
+      },
+      "blog-custom-main": {
+        "type": "blog-custom-main",
+        "blocks": {
+          "1563959894460": {
+            "type": "slide",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/instagram-image-2.png",
+              "item-text": "WHERE WE’RE DRINKING THIS MONTH"
+            }
+          },
+          "1563959911406": {
+            "type": "slide",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/8OpRmPoZ.jpeg",
+              "item-text": "WHERE WE’RE DRINKING THIS MONTH"
+            }
+          },
+          "1563960534995": {
+            "type": "slide",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/Screen_Shot_2018-06-11_at_1.27.22_PM_copy.png",
+              "item-text": "WHERE WE’RE DRINKING THIS MONTH"
+            }
+          },
+          "1563960556720": {
+            "type": "slide",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/instagram-image-4.png",
+              "item-text": "WHERE WE’RE DRINKING THIS MONTH"
+            }
+          },
+          "1563960756618": {
+            "type": "slide",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/Owen1.png",
+              "item-text": "WHERE WE’RE DRINKING THIS MONTH"
+            }
+          },
+          "1563960823802": {
+            "type": "slide",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/instagram-image-3.png",
+              "item-text": "WHERE WE’RE DRINKING THIS MONTH"
+            }
+          }
+        },
+        "block_order": [
+          "1563959894460",
+          "1563959911406",
+          "1563960534995",
+          "1563960556720",
+          "1563960756618",
+          "1563960823802"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -514,29 +721,6 @@
             "show_vendor": false,
             "enable_zoom": true,
             "show_share_buttons": true
-          }
-        },
-        "event-template": {
-          "type": "product-template",
-          "settings": {
-            "image_size": "medium",
-            "show_quantity_selector": false,
-            "show_variant_labels": true,
-            "show_vendor": false,
-            "enable_zoom": true,
-            "show_share_buttons": true
-          }
-        },
-        "collection-template": {
-          "type": "collection-template",
-          "settings": {
-            "layout": "grid",
-            "grid": 2,
-            "rows": 2,
-            "show_collection_image": true,
-            "show_vendor": false,
-            "sort_enable": true,
-            "tags_enable": true
           }
         },
         "1492033809691": {
