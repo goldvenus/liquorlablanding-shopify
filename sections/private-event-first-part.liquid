@@ -1,72 +1,46 @@
-{{ 'css/additional.scss.css' | asset_url | stylesheet_tag }}
-<div data-section-id="{{ section.id }}" data-section-type="header-section" class="main-section-header-parent">
-    <div class="main-section-container">
-        <div class="main-section-header">
-            <div class="main-section-header-left">
-              <a href="/pages/private-events">PRIVATE EVENTS</a>
-              <a href="/pages/shop">SHOP</a>
-              <a href="/">BARTENDER'S CONRNER</a>
-              <a href="/pages/about">ABOUT</a>
-            </div>
-            <a href="/">
-                <div class="main-section-header-logo">
-                    <div class="header-logo" align="middle">
-                        <img src="https://cdn.shopify.com/s/files/1/0246/5352/9187/files/LL_Logo_clean.png?93" alt="Liquor Lab Logo"  />
-                    </div>
-                </div>
-            </a>
-            <a href="/collections/new-york" class="partial-button-parent partial-style-4">
-                <div class="partial-button">
-                    <span>VIEW EVENTS</span>
-                </div>
-            </a>
-            <span class="d-md-none d-sm-flex header-nav-bar-icon" onclick="openNav()">&#9776;</span>
-            <div id="myNav" class="overlay d-md-none d-sm-block">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="/pages/private-events">PRIVATE EVENTS</a>
-                    <a href="/pages/shop">SHOP</a>
-                    <a href="/">BARTENDER'S CONRNER</a>
-                    <a href="/pages/about">ABOUT</a>
-                </div>
-            </div>
+<div data-section-id="{{ section.id }}" data-section-type="hero-section">
+    <div class="private-event-section-container">
+      <div class="pe-first-section">
+        <img src="{{'private-event.png' | asset_url}}"/>
+      </div>
+      <div class="pe-second-section">
+        <h1>PRIVATE EVENTS</h1>
+        <div class="second-section-mobile-image">
+          <img src="{{'private-event.png' | asset_url}}"/>
         </div>
+        <h2>Here is a quick rundown of how you can get your
+          <br/> private event up and running:</h2>
+          <ul>
+            <li>
+              All group sizes up to 50 guests are welcome. Costs are all inclusive (they include the entire 4 cocktail experience (menu of your choice), a main catering selection (from our available options), all fees, and gratuity.
+            </li>
+            <li>
+              There is a $2,000 minimum charge for groups of up to 20 guests (i.e. if you only have 12 people the cost would be the minimum of $2,000).
+            </li>
+            <li>
+              Each additional guest over 20 is $99/guest.  (i.e. if you have 24 guests your estimate would be $2,000 + ($99*4) = $2,396 + tax).
+            </li>
+            <li>
+              For groups over 35 there is no minimum, and the cost is a flat rate $89/guest + tax.
+            </li>
+            <li>
+              Events average 2 hours in length.
+            </li>
+          </ul>
+      </div>
     </div>
 </div>
-
 <script>
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+  function gotoFunction() {
+    var element = document.getElementById("scroll-second-section");
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-  function openlist(evt, listname,slidebar,linkname) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    document.getElementById(listname).style.display = "block";
-    document.getElementById("slide-selected").style.marginLeft = slidebar;
-
-    evt.currentTarget.className += " active";
-  }
-  window.switchModal = function(){
-    $('#login-modal').modal('hide');
-    setTimeout(function(){ $('#start-modal').modal(); }, 500);
-    // the setTimeout avoid all problems with scrollbars
-  };
 </script>
-
-
 {% schema %}
     {
     "name": {
     "de": "Foto mit überlegtem Text",
-    "en": "header section",
+    "en": "private event top section",
     "es": "Imagen con texto",
     "fr": "Image avec texte",
     "it": "Immagine con testo",
@@ -458,7 +432,7 @@
     {
     "name": {
     "de": "Foto mit überlegtem Text",
-    "en": "header section",
+    "en": "private event top section",
     "es": "Imagen con texto",
     "fr": "Image avec superposition de texte",
     "it": "Immagine con testo",

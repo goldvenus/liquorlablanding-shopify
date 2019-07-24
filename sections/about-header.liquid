@@ -1,0 +1,59 @@
+<div class="about-header-parent">
+  <div class="about-header-container">
+    <h1>{{section.settings.title}}</h1>
+    <h3>{{section.settings.description1}}</h3>
+    <div class="about-image-div">
+      <img src="{{ section.settings.about-image | img_url: 'original' }}"/>
+    </div>
+    <p>
+      {{section.settings.about_text1}}
+    </p>
+    <p>
+      {{section.settings.about_text2}}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+    {
+    "name":  "about header",
+    "class": "index-section index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "about-image",
+        "label": "about header image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "about header text",
+        "default": "About Liquor Lab"
+      },
+      {
+      "type": "text",
+      "id": "description1",
+      "label": "description1",
+      "default": "Located at 138 Wooster St. in the heart of Soho, Liquor Laboratory – best known as Liquor Lab – is a hands-on, interactive craft beer, wine, spirits and cocktail event space where guests can experience custom beverages like never before."
+      },
+      {
+        "type": "text",
+        "id": "about_text1",
+        "label": "about first header text",
+        "default": "Think of Liquor Lab as a cooking class, but solely for specialty sips. While learning about recipe history and preparation, attendees shake, stir and sip delicious drinks. A category-specific professional leads each instructional session, as guests follow along step-by-step and discover the evening’s focus in a fun and exciting atmosphere."
+      },
+      {
+        "type": "text",
+        "id": "about_text2",
+        "label": "about second header text",
+        "default": "Liquor Lab encourages socializing with friends and meeting new people. During the tutorial, there are opportunities to interact with the class leader and win prizes."
+      }
+    ],
+    "presets": [
+      {
+      "name": "about header",
+      "category": "about header section"
+      }
+    ]
+  }
+{% endschema %}

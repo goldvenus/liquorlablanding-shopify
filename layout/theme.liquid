@@ -37,6 +37,7 @@
     {% include 'social-meta-tags' %}
 
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+    {{ 'additional.scss.css' | asset_url | stylesheet_tag }}
     <script>
       var theme = {
         strings: {
@@ -71,7 +72,6 @@
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'slick.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
-
     {{ content_for_header }}
 </head>
 
@@ -102,16 +102,15 @@
         </div>
     </div>
 </div>
-
+{% section 'header-custom' %}
 <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
     {{ content_for_layout }}
 </main>
+{% section 'footer-custom' %}
 <div id="slideshow-info" class="visually-hidden" aria-hidden="true">
     {{- 'sections.slideshow.navigation_instructions' | t -}}
 </div>
-<ul hidden>
-    <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
-    <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
-</ul>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer="defer"></script>
+<script src="{{ 'custom-jquery.js' | asset_url }}" defer="defer"></script>
 </html>

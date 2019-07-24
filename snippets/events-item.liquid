@@ -1,0 +1,36 @@
+{{ 'events.scss.css' | asset_url | stylesheet_tag }}
+<div class="product-card product-card--list">
+  <div class="events-filter-section">
+    <div class="events-select">
+      <div class="events-category d-flex">
+        <img src="{{ product.featured_image.src | img_url: '237x197', scale: 2 }}" alt="{{ product.featured_image.alt }}"/>
+        <div class="events-category-info">
+            <h1>{{ product.title }}</h1>
+            <h2>{{ product.description }}</h2>
+            <h5>{{product.options_with_values[0].values[0]}}</h5>
+            {% if product.compare_at_price > product.price %}
+              <p>{{ 'products.product.on_sale' | t }}</p>
+            {% endif %}
+            {% if section.settings.show_vendor %}
+              <div class="list-view-item__vendor medium-up--hide">{{ product.vendor }}</div>
+            {% endif %}
+            {% unless product.available %}
+              <div class="list-view-item__sold-out">{{ 'products.product.sold_out' | t }}</div>
+            {% endunless %}
+            <div class="list-view-item__price-column">
+              {% if product.available %}
+                {% include 'product-price', variant: product %}
+              {% endif %}
+            </div>
+            <div class="partial-button-parent4 partial-style-2">
+                <a href="{{ product.url | within: collection }}">
+                  <div class="partial-button">
+                    <span>VIEW CLASS</span>
+                  </div>
+                </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

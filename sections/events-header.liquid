@@ -1,72 +1,21 @@
-{{ 'css/additional.scss.css' | asset_url | stylesheet_tag }}
-<div data-section-id="{{ section.id }}" data-section-type="header-section" class="main-section-header-parent">
-    <div class="main-section-container">
-        <div class="main-section-header">
-            <div class="main-section-header-left">
-              <a href="/pages/private-events">PRIVATE EVENTS</a>
-              <a href="/pages/shop">SHOP</a>
-              <a href="/">BARTENDER'S CONRNER</a>
-              <a href="/pages/about">ABOUT</a>
-            </div>
-            <a href="/">
-                <div class="main-section-header-logo">
-                    <div class="header-logo" align="middle">
-                        <img src="https://cdn.shopify.com/s/files/1/0246/5352/9187/files/LL_Logo_clean.png?93" alt="Liquor Lab Logo"  />
-                    </div>
-                </div>
-            </a>
-            <a href="/collections/new-york" class="partial-button-parent partial-style-4">
-                <div class="partial-button">
-                    <span>VIEW EVENTS</span>
-                </div>
-            </a>
-            <span class="d-md-none d-sm-flex header-nav-bar-icon" onclick="openNav()">&#9776;</span>
-            <div id="myNav" class="overlay d-md-none d-sm-block">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="/pages/private-events">PRIVATE EVENTS</a>
-                    <a href="/pages/shop">SHOP</a>
-                    <a href="/">BARTENDER'S CONRNER</a>
-                    <a href="/pages/about">ABOUT</a>
-                </div>
-            </div>
-        </div>
+<div data-section-id="{{ section.id }}" data-section-type="hero-section">
+    <div class="events-section-container">
+      <div class="events-first-section">
+        <h1>EVENTS</h1>
+        <p>
+          Our events are led by a beer/wine/ spirits specialist in our state of the art laborities designed for the best cocktail experiences
+        </p>
+      </div>
     </div>
 </div>
 
-<script>
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-  function openlist(evt, listname,slidebar,linkname) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    document.getElementById(listname).style.display = "block";
-    document.getElementById("slide-selected").style.marginLeft = slidebar;
-
-    evt.currentTarget.className += " active";
-  }
-  window.switchModal = function(){
-    $('#login-modal').modal('hide');
-    setTimeout(function(){ $('#start-modal').modal(); }, 500);
-    // the setTimeout avoid all problems with scrollbars
-  };
-</script>
 
 
 {% schema %}
     {
     "name": {
     "de": "Foto mit überlegtem Text",
-    "en": "header section",
+    "en": "Events section",
     "es": "Imagen con texto",
     "fr": "Image avec texte",
     "it": "Immagine con testo",
@@ -458,7 +407,7 @@
     {
     "name": {
     "de": "Foto mit überlegtem Text",
-    "en": "header section",
+    "en": "Events section",
     "es": "Imagen con texto",
     "fr": "Image avec superposition de texte",
     "it": "Immagine con testo",
