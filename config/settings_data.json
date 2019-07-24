@@ -506,6 +506,17 @@
           "1563960823802"
         ],
         "settings": {}
+      },
+      "collection-shop": {
+        "type": "collection-shop",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "shop",
+          "grid": 3,
+          "rows": 3,
+          "show_vendor": false,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
