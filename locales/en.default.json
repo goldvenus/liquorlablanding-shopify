@@ -137,8 +137,8 @@
   },
   "cart": {
     "general": {
-      "title": "Your cart",
-      "note": "Add a note to your order",
+      "title": "CART",
+      "note": "SPECIAL INSTRUCTIONS",
       "remove": "Remove",
       "subtotal": "Subtotal",
       "savings": "You're saving",
@@ -155,10 +155,10 @@
       "continue_shopping": "Continue shopping"
     },
     "label": {
-      "product": "Product",
-      "price": "Price",
-      "quantity": "Quantity",
-      "total": "Total"
+      "product": "PRODUCT",
+      "price": "PRICE",
+      "quantity": "QUANTITY",
+      "total": "TOTAL"
     }
   },
   "collections": {

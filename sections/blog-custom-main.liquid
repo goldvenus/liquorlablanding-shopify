@@ -1,0 +1,38 @@
+<div class="blog-main-section-parent">
+  {%- if section.blocks.size > 0 -%}
+    {%- for block in section.blocks -%}
+    {% include 'blog-item', product: block %}
+    {% endfor %}
+  {% endif %}
+</div>
+{% schema %}
+    {
+        "name": "blog itmes",
+        "max_blocks": 40,
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "add blog items",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "item_image",
+                        "label": "Add img for item"
+                    },
+                    {
+                        "type": "text",
+                        "id": "item-text",
+                        "label": "item text"
+                    }
+                ]
+           }
+        ],
+    "presets": [
+        {
+            "name": "blog items",
+            "category": "Image",
+            "blocks": []
+          }
+      ]
+    }
+{% endschema %}

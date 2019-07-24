@@ -1,72 +1,159 @@
-{{ 'css/additional.scss.css' | asset_url | stylesheet_tag }}
-<div data-section-id="{{ section.id }}" data-section-type="header-section" class="main-section-header-parent">
-    <div class="main-section-container">
-        <div class="main-section-header">
-            <div class="main-section-header-left">
-              <a href="/pages/private-events">PRIVATE EVENTS</a>
-              <a href="/pages/shop">SHOP</a>
-              <a href="/">BARTENDER'S CONRNER</a>
-              <a href="/pages/about">ABOUT</a>
-            </div>
-            <a href="/">
-                <div class="main-section-header-logo">
-                    <div class="header-logo" align="middle">
-                        <img src="https://cdn.shopify.com/s/files/1/0246/5352/9187/files/LL_Logo_clean.png?93" alt="Liquor Lab Logo"  />
-                    </div>
-                </div>
-            </a>
-            <a href="/collections/new-york" class="partial-button-parent partial-style-4">
-                <div class="partial-button">
-                    <span>VIEW EVENTS</span>
-                </div>
-            </a>
-            <span class="d-md-none d-sm-flex header-nav-bar-icon" onclick="openNav()">&#9776;</span>
-            <div id="myNav" class="overlay d-md-none d-sm-block">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a href="/pages/private-events">PRIVATE EVENTS</a>
-                    <a href="/pages/shop">SHOP</a>
-                    <a href="/">BARTENDER'S CONRNER</a>
-                    <a href="/pages/about">ABOUT</a>
-                </div>
-            </div>
+<div data-section-id="{{ section.id }}" data-section-type="hero-section">
+    <div class="private-event-section-container">
+      <div class="pe-third-section">
+        <p>
+          Liquor Laboratory - best known as Liquor Lab - is Manhattan's first hands-
+          <br/>on, interactive cocktail event space where guests can experience custom
+          <br/>beverages like never before.  Our renowned Chief Cocktail Officer Freddie
+          <br/>Sarkis (and team including Elayne Duff, Chris Bidmead, and more) leads
+          <br/>each instructional session, as guests follow along step-by-step and
+          <br/>discover the evening's focus in a fun and exciting atmosphere.
+        </p>
+        <h1>LOGISTICS</h1>
+        <p>
+          Guests sit on cushy barstools with shared ice buckets and other tools,
+          <br/>making the evenings collaborative and social.
+        </p>
+        <h1>THEMES & CATERING</h1>
+        <div class="pe-second-themes d-flex">
+          <div class="pe-second-themes-left-bar">
+          </div>
+          <div class="pe-s-t-items">
+            <h3>Theme Options</h3>
+            <h4>Margaritas & Tacos</h4>
+            <h4>Iconic NYC Cocktails</h4>
+            <h4>Bourbon & BBQ</h4>
+            <h4>Japanese Spirits & Sushi</h4>
+          </div>
+          <div class="pe-s-t-items">
+            <h3>Catering Options</h3>
+            <h4>Prince St. Pizza</h4>
+            <h4>Tijuana Picnic</h4>
+            <h4>Hill Country BBQ</h4>
+            <h4>Faicco's Italian</h4>
+          </div>
         </div>
+        <p>
+          All catering options are sourced from local restaurants/businesses who we love
+          <br/>to support and include a veggie platter, cheese board, pita, hummus and dips.
+        </p>
+        <h1>GIFTS</h1>
+        <p>
+          All catering options are sourced from local restaurants/businesses who we love
+          <br/>to support and include a veggie platter, cheese board, pita, hummus and dips.
+        </p>
+        <h1>RUN OF SHOW</h1>
+        <p>
+          The two hour event format is such that you will experience step-by-step guided
+          <br/>cocktail instruction from our master mixologist with an added social element
+          <br/>making this the perfect team building/friends night out.
+        </p>
+        <h1>CLASS BREAK DOWN</h1>
+        <ul>
+          <li>
+            Introduction and welcome to Liquor Lab, overview of class, explanation of
+            <br/>tools and practice shake.
+          </li>
+          <li>
+            First cocktail is made with step-by-step instruction
+          </li>
+          <li>
+            Social break with light music. Guest are free to walk around the room take
+            <br/>pictures in our Instagram light box for cocktails, Boomerang and group
+            <br/>photo station for friends and group photos, and more
+          </li>
+          <li>
+            Second cocktail is made
+          </li>
+          <li>
+            Second cocktail is made
+          </li>
+          <li>
+            Social break
+          </li>
+          <li>
+            Fourth cocktail is made
+          </li>
+          <li>
+            Class dismissed!
+          </li>
+        </ul>
+      </div>
+      <div class="pe-fourth-section">
+        <h1>MOST POPULAR MENUS</h1>
+        <div class="d-flex pe-fourth-menu-item-group">
+          <div class="pe-fourth-menu-item">
+            <h2>MARGARITAS & TACOS</h2>
+            <h3>1. MARGARITAS & TACOS</h3>
+            <h4>TEQUILA, AGUAVE, LIME</h4>
+            <p>INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME</p>
+            <h3>2. SPICY PINEAPPLE MEZCAL MARGARITA</h3>
+            <h4>TEQUILA, AGUAVE, LIME</h4>
+            <p>INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME</p>
+            <h3>3. CUCUMBER ROSEMARY MARGARITA</h3>
+            <h4>TEQUILA, ROSEMARY SYRUP, CUCUMBER, LEMON</h4>
+            <p>
+              INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME
+            </p>
+            <h3>4. PASSION FRUIT MARGARITA</h3>
+            <h4>TEQUILA, ROSEMARY SYRUP, CUCUMBER, LEMON</h4>
+            <p>
+              INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME
+            </p>
+          </div>
+          <div class="pe-fourth-menu-item">
+            <h2>MARGARITAS & TACOS</h2>
+            <h3>1. MARGARITAS & TACOS</h3>
+            <h4>TEQUILA, AGUAVE, LIME</h4>
+            <p>INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME</p>
+            <h3>2. SPICY PINEAPPLE MEZCAL MARGARITA</h3>
+            <h4>TEQUILA, AGUAVE, LIME</h4>
+            <p>INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME</p>
+            <h3>3. CUCUMBER ROSEMARY MARGARITA</h3>
+            <h4>TEQUILA, ROSEMARY SYRUP, CUCUMBER, LEMON</h4>
+            <p>
+              INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME
+            </p>
+            <h3>4. PASSION FRUIT MARGARITA</h3>
+            <h4>TEQUILA, ROSEMARY SYRUP, CUCUMBER, LEMON</h4>
+            <p>
+              INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME
+            </p>
+          </div>
+          <div class="pe-fourth-menu-item">
+            <h2>MARGARITAS & TACOS</h2>
+            <h3>1. MARGARITAS & TACOS</h3>
+            <h4>TEQUILA, AGUAVE, LIME</h4>
+            <p>INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME</p>
+            <h3>2. SPICY PINEAPPLE MEZCAL MARGARITA</h3>
+            <h4>TEQUILA, AGUAVE, LIME</h4>
+            <p>INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME</p>
+            <h3>3. CUCUMBER ROSEMARY MARGARITA</h3>
+            <h4>TEQUILA, ROSEMARY SYRUP, CUCUMBER, LEMON</h4>
+            <p>
+              INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME
+            </p>
+            <h3>4. PASSION FRUIT MARGARITA</h3>
+            <h4>TEQUILA, ROSEMARY SYRUP, CUCUMBER, LEMON</h4>
+            <p>
+              INGREDIENTS ARE COMBINED, SHAKEN, AND STRAINED STRAIGHT UP, GARNISH WITH LIME
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
-
 <script>
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+  function gotoFunction() {
+    var element = document.getElementById("scroll-second-section");
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-  function openlist(evt, listname,slidebar,linkname) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    document.getElementById(listname).style.display = "block";
-    document.getElementById("slide-selected").style.marginLeft = slidebar;
-
-    evt.currentTarget.className += " active";
-  }
-  window.switchModal = function(){
-    $('#login-modal').modal('hide');
-    setTimeout(function(){ $('#start-modal').modal(); }, 500);
-    // the setTimeout avoid all problems with scrollbars
-  };
 </script>
-
-
 {% schema %}
     {
     "name": {
     "de": "Foto mit überlegtem Text",
-    "en": "header section",
+    "en": "p-event-bottom",
     "es": "Imagen con texto",
     "fr": "Image avec texte",
     "it": "Immagine con testo",
@@ -458,7 +545,7 @@
     {
     "name": {
     "de": "Foto mit überlegtem Text",
-    "en": "header section",
+    "en": "p-event-bottom",
     "es": "Imagen con texto",
     "fr": "Image avec superposition de texte",
     "it": "Immagine con testo",

@@ -1,0 +1,215 @@
+.events-section-container {
+    width: 1440px;
+    margin:0 auto;
+    @media(max-width: 780px) {
+    width: 80%;
+    }
+}
+.d-flex {
+  display: flex;
+}
+.events-first-section {
+  width: 47%;
+  margin:0 auto;
+  margin-top: 100px;
+  @media(min-width: 780px) {
+    margin-bottom: 55px;
+  }
+  @media(max-width: 780px) {
+    width: 100%;
+    margin-top: 55px;
+  }
+  h1 {
+  	color: #000000;
+  	font-size: 65px;
+  	font-weight: bold;
+  	letter-spacing: 5.42px;
+  	line-height: 32px;
+    margin:0;
+    @media(max-width: 780px) {
+      font-size: 45px;
+      letter-spacing: 3.75px;
+    }
+  }
+  p {
+      padding-top: 35px;
+    	opacity: 0.96;
+    	color: #000000;
+    	font-size: 26px;
+    	font-weight: 300;
+    	letter-spacing: 0.2px;
+    	line-height: 32px;
+    	text-shadow: 4px 2px 14px 0 #FFFFFF;
+      @media(max-width: 780px) {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 22px;
+      }
+  }
+}
+.list-view-items {
+  display: block;
+}
+.page-width {
+  padding:0;
+}
+.events-filter-section {
+  width: 100%;
+  margin-left: 0 auto;
+  @media(max-width: 780px) {
+    width: 100%;
+  }
+  .events-select {
+    width: 72%;
+    margin: 0 auto;
+    @media(max-width: 780px){
+      width: 80%;
+    }
+    h3 {
+    	color: #000000;
+    	font-size: 20px;
+    	font-weight: 300;
+    	line-height: 24px;
+      text-align: center;
+      strong {
+        font-weight: 800;
+      }
+    }
+    .events-category {
+    	width: 100%;
+    	background-color: #FFFFFF;
+    	box-shadow: 2px 2px 7px 2px rgba(0,0,0,0.1);
+    }
+    .events-category {
+      align-items: center;
+      padding:35px 75px;
+      margin-bottom: 20px;
+      @media (max-width: 780px) {
+        padding:0;
+        display: block;
+      }
+      img {
+        margin-right: 75px;
+        object-fit: cover;
+        width: 237px;
+        height: 197px;
+        @media (max-width: 780px) {
+          width: 100%;
+        }
+      }
+      .events-category-info {
+        @media (max-width: 780px) {
+          width: 90%;
+          margin: 0 auto;
+          padding:10px 0;
+        }
+        h1 {
+          margin:0;
+          font-size: 30px;
+          text-shadow: 1px 2px rgba(0,0,0,0.16);
+          text-align: left;
+          @media (max-width: 780px) {
+            font-size: 24px;
+            text-align: left;
+          }
+        }
+        h2 {
+          text-shadow: 1px 2px rgba(0,0,0,0.16);
+          margin:0;
+          letter-spacing: 0;
+          text-align: left;
+          @media (max-width: 780px) {
+            text-align: left;
+          }
+        }
+        h5 {
+          width: 130px;
+          margin:0;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: left;
+          @media (max-width: 780px) {
+            text-align: left;
+          }
+        }
+        p{
+          margin:0;
+          font-size: 12px;
+          font-weight: 300;
+        }
+        .partial-button-parent4 {
+          padding-top: 30px;
+          @media(max-width: 780px) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+          }
+          cursor: pointer;
+          .partial-button {
+            width: 200px;
+            height: 45px;
+            border: 4px solid red;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media(max-width: 780px) {
+              width: 163px;
+              height: 42px;
+            }
+          }
+          .partial-button:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 25px;
+            bottom: -6px;
+            left: -6px;
+            border: 15px solid white;
+          }
+          .partial-button:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 25px;
+            top: -6px;
+            right: -6px;
+            border: 15px solid white;
+          }
+          .partial-button span {
+            font-size: 30px;
+            text-align: center;
+            z-index: 100;
+            position: absolute;
+          }
+        }
+        .partial-style-2 {
+          .partial-button {
+            border: #C4892F 1px solid;
+          }
+          .partial-button:before {
+            border: 15px solid white;
+          }
+          .partial-button:after {
+            border: 15px solid white;
+          }
+          .partial-button span {
+            color: #C4892F;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.56px;
+            line-height: 45px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.list-view-item {
+    padding-bottom: 0;
+    border-bottom: 0;
+    @media(max-width: 780px) {
+      display: block;
+    }
+}

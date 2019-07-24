@@ -3077,12 +3077,12 @@ $slick-dot-size-small: 10px;
 
 /*================ Index sections ================*/
 .index-section {
-  padding-top: $section-spacing-small;
-  padding-bottom: $section-spacing-small;
+  padding-top: 0;//0$section-spacing-small;
+  padding-bottom: 0;//$section-spacing-small;
 
   @include media-query($medium-up) {
-    padding-top: $section-spacing;
-    padding-bottom: $section-spacing;
+    padding-top: 0;//$section-spacing;
+    padding-bottom: 0;//$section-spacing;
   }
 
   &:first-child {
@@ -5421,7 +5421,11 @@ $transition-controls-slideshow: color 0.2s $ease-transition, background-color 0.
 }
 
 .price__regular {
-  color: $color-body-text;
+  //color: black;//$color-body-text;
+  margin:0;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
 }
 
 .price__sale {
@@ -7063,3 +7067,8 @@ $transition-controls-video: color 0.2s $ease-transition, background-color 0.2s $
   }
 }
 
+.slick-slide img {
+  display: block;
+  max-height: 36vh;
+  margin: 10px
+}

@@ -1,0 +1,93 @@
+{{ 'collection-choose-dropdown.scss.css' | asset_url | stylesheet_tag }}
+<div class="about-main-parent">
+  <div class="about-main-container">
+    <h1>WHO’S BEHIND THE BAR</h1>
+    <h3>Gift cards and lab swag</h3>
+    <div class="d-flex">
+      <h3 class="d-flex align-items-center">Sort by</h3>
+      <select id="select-category">
+        <option value="featured">
+          FEATURED
+        </option>
+        <option value="featured1">
+          FEATURED1
+        </option>
+      <select/>
+    </div>
+    <div class="about-list-members">
+      <div class="about-member-select-featured">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured1">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured1">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured1">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured1">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured1">
+        {%- include 'about-member' -%}
+      </div>
+      <div class="about-member-select-featured1">
+        {%- include 'about-member' -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+    {
+        "name": "about members",
+        "max_blocks": 40,
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "add image",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "filter-text",
+                        "label": "filter-text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "member-name",
+                        "label": "member name"
+                    },
+                    {
+                        "type": "text",
+                        "id": "description",
+                        "label": "description"
+                    },
+                    {
+                        "type": "text",
+                        "id": "content",
+                        "label": "content"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "slide_img",
+                        "label": "Add img for slide"
+                    }
+                ]
+           }
+        ],
+    "presets": [
+        {
+            "name": "about members",
+            "category": "Image",
+            "blocks": []
+          }
+      ]
+    }
+{% endschema %}

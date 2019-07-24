@@ -2,8 +2,8 @@
   "current": {
     "color_text": "#3d4246",
     "color_body_text": "#69727b",
-    "color_sale_text": "#557b97",
-    "color_button": "#557b97",
+    "color_sale_text": "#CA9543",
+    "color_button": "#CA9543",
     "color_button_text": "#ffffff",
     "color_small_button_text_border": "#3d4246",
     "color_text_field_text": "#000000",
@@ -125,28 +125,6 @@
           "button_link": ""
         }
       },
-      "1563210717912": {
-        "type": "header-custom",
-        "settings": {
-          "image": "",
-          "alignment": "center",
-          "hero_layout": "full_width",
-          "hero_size": "medium",
-          "text_size": "medium",
-          "title": "header section",
-          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
-          "button_label": "",
-          "button_link": ""
-        }
-      },
-      "1563211018102": {
-        "type": "footer-custom",
-        "settings": {
-          "show_payment_icons": false,
-          "color_footer_bg": "#f5f5f5",
-          "color_footer_text": "#3d4246"
-        }
-      },
       "1563297481473": {
         "type": "slider-image-custom",
         "blocks": {
@@ -225,13 +203,107 @@
           "carousel_arrows": false,
           "autoplay_speed": "3000"
         }
+      },
+      "header-custom": {
+        "type": "header-custom",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "footer-custom": {
+        "type": "footer-custom",
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#f5f5f5",
+          "color_footer_text": "#3d4246"
+        }
+      },
+      "private-event-first-part": {
+        "type": "private-event-first-part",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "slider-image-custom": {
+        "type": "slider-image-custom",
+        "blocks": {
+          "1563615677772": {
+            "type": "slide",
+            "settings": {
+              "button_title": "",
+              "slide_link": "",
+              "slide_title": "",
+              "slide_text": "",
+              "slide_img": "shopify:\/\/shop_images\/8OpRmPoZ.jpeg"
+            }
+          },
+          "1563615699660": {
+            "type": "slide",
+            "settings": {
+              "button_title": "",
+              "slide_link": "",
+              "slide_title": "",
+              "slide_text": "",
+              "slide_img": "shopify:\/\/shop_images\/Owen1.png"
+            }
+          },
+          "1563615707445": {
+            "type": "slide",
+            "settings": {
+              "button_title": "",
+              "slide_link": "",
+              "slide_title": "",
+              "slide_text": "",
+              "slide_img": "shopify:\/\/shop_images\/Screen_Shot_2018-06-11_at_1.27.22_PM_copy.png"
+            }
+          }
+        },
+        "block_order": [
+          "1563615677772",
+          "1563615699660",
+          "1563615707445"
+        ],
+        "settings": {
+          "carousel_autoplay": true,
+          "carousel_dots": false,
+          "carousel_arrows": false,
+          "autoplay_speed": "7000"
+        }
+      },
+      "private-event-second-section": {
+        "type": "private-event-second-section",
+        "settings": {
+          "image": "",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
-      "1563210717912",
       "1563190760622",
-      "1563297481473",
-      "1563211018102"
+      "1563297481473"
     ]
   },
   "presets": {
@@ -434,6 +506,17 @@
           }
         },
         "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "event-template": {
           "type": "product-template",
           "settings": {
             "image_size": "medium",

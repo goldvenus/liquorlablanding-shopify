@@ -1,0 +1,48 @@
+<div class="blog-header-section-parent">
+  <h1>{{section.settings.title}}</h1>
+  <p>
+    {{section.settings.description}}
+  </p>
+  <div class="blog-header-image-div">
+    <h2 class="desktop-display">{{section.settings.blog_image_text}}</h2>
+    <img src="{{ section.settings.blog-image | img_url: 'original' }}"/>
+    <h2 class="mobile-display">{{section.settings.blog_image_text}}</h2>
+  </div>
+</div>
+{% schema %}
+    {
+    "name":  "blog header",
+    "class": "index-section index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "blog-image",
+        "label": "blog header image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "blog header text",
+        "default": "BARTENDER’S CORNER"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "description",
+        "default": "Stories from our world renowned bartenders"
+      },
+      {
+        "type": "text",
+        "id": "blog_image_text",
+        "label": "blog image text",
+        "default": "Bartender of the Month"
+      }
+    ],
+    "presets": [
+      {
+      "name": "blog header",
+      "category": "blog header section"
+      }
+    ]
+  }
+{% endschema %}
