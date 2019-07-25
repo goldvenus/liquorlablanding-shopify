@@ -1,0 +1,56 @@
+{{ "home-location.scss.css" | asset_url | stylesheet_tag }}
+<div class="location-home-testimonial-parent">
+  {% for block in section.blocks %}
+  <div class="location-testimonial-item">
+    <h3>{{block.settings.member_text}}</h3>
+    <img src="{{block.settings.button_image | img_url: 'original'}}"/>
+  </div>
+  {% endfor %}
+</div>
+<div class="location-home-social-div">
+  <div class="location-home-social-left">
+    <h1>A Social Mixology Experience</h1>
+    <p>
+      Think of this as a cooking class, but solely for specialty sips. While learning about recipe history and preparation, attendees shake, stir and sip delicious drinks. A category-specific professional leads each instructional session, as guests follow along step-by-step and discover the evening’s focus in a fun and exciting atmosphere.
+    </p>
+    <a href="/">
+      <div class="header-classes-button">
+        View Classes
+      </div>
+    </a>
+  </div>
+  <img src="{{'hero-image.png' | asset_url }}"/>
+</div>
+
+
+{% schema %}
+    {
+        "name": "home location testimonial",
+        "max_blocks": 3,
+        "blocks": [
+            {
+                "type": "slide",
+                "name": "person",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "member_text",
+                        "label": "member name"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "button_image",
+                        "label": "Add img for slide"
+                    }
+                ]
+           }
+        ],
+    "presets": [
+        {
+            "name": "home location testimonial",
+            "category": "location home section",
+            "blocks": []
+          }
+      ]
+    }
+{% endschema %}

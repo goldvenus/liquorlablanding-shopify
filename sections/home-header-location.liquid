@@ -1,0 +1,61 @@
+{{ "home-location.scss.css" | asset_url | stylesheet_tag }}
+<div class="location-home-header-parent">
+  <div class="header-left-image-div">
+    <img src="{{ section.settings.header_image1 | img_url: 'original' }}"/>
+    <img class="header-second-image" src="{{ section.settings.header_image2 | img_url: 'original' }}"/>
+  </div>
+  <div class="header-right-title-div">
+    <h2>{{section.settings.header_title}}</h2>
+    <p>
+      {{section.settings.description1}}
+    </p>
+    <div class="header-right-buttons">
+      <a href="/">
+        <div class="header-learn-button">
+          Learn more
+        </div>
+      </a>
+      <a href="/">
+        <div class="header-classes-button">
+          View Classes
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name":  "location home header",
+    "class": "index-section index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "header_image1",
+        "label": "home header first image"
+      },
+      {
+        "type": "image_picker",
+        "id": "header_image2",
+        "label": "home header second image"
+      },
+      {
+        "type": "text",
+        "id": "header_title",
+        "label": "home header title",
+        "default": "SHAKE, STIR, SIP"
+      },
+      {
+        "type": "text",
+        "id": "description1",
+        "label": "description1",
+        "default": "Liquor Lab is a hands-on, interactive craft beer, wine, spirits and cocktail event space where guests can experience custom beverages like never before."
+      }
+    ],
+    "presets": [
+      {
+        "name": "location home header",
+        "category": "location home section"
+      }
+    ]
+  }
+{% endschema %}

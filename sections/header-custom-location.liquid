@@ -1,0 +1,486 @@
+{{ 'css/additional.scss.css' | asset_url | stylesheet_tag }}
+<div data-section-id="{{ section.id }}" data-section-type="header-section" class="main-section-header-parent">
+    <div class="main-section-container">
+        <div class="main-section-header">
+            <div class="main-section-header-left">
+              <a href="/pages/private-events">PRIVATE EVENTS</a>
+              <a href="/collections/shop">SHOP</a>
+              <a href="/">BARTENDER'S CONRNER</a>
+              <a href="/pages/about">ABOUT</a>
+            </div>
+            <a href="/">
+                <div class="main-section-header-logo">
+                    <div class="header-logo" align="middle">
+                        <img src="https://cdn.shopify.com/s/files/1/0246/5352/9187/files/LL_Logo_clean.png?93" alt="Liquor Lab Logo"  />
+                    </div>
+                </div>
+            </a>
+            <a href="/collections/events" class="partial-button-parent partial-style-4">
+                <div class="partial-button">
+                    <span>VIEW EVENTS</span>
+                </div>
+            </a>
+            <span class="d-md-none d-sm-flex header-nav-bar-icon" onclick="openNav()">&#9776;</span>
+            <div id="myNav" class="overlay d-md-none d-sm-block">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="/pages/private-events">PRIVATE EVENTS</a>
+                    <a href="/collections/shop">SHOP</a>
+                    <a href="/">BARTENDER'S CONRNER</a>
+                    <a href="/pages/about">ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  function openlist(evt, listname,slidebar,linkname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    document.getElementById(listname).style.display = "block";
+    document.getElementById("slide-selected").style.marginLeft = slidebar;
+
+    evt.currentTarget.className += " active";
+  }
+  window.switchModal = function(){
+    $('#login-modal').modal('hide');
+    setTimeout(function(){ $('#start-modal').modal(); }, 500);
+    // the setTimeout avoid all problems with scrollbars
+  };
+</script>
+
+
+{% schema %}
+    {
+    "name": {
+    "de": "Foto mit überlegtem Text",
+    "en": "header section",
+    "es": "Imagen con texto",
+    "fr": "Image avec texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "nl": "Foto met tekstoverlay",
+    "pt-BR": "Imagem com texto",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加的圖片"
+    },
+    "class": "index-section index-section--flush",
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": {
+    "de": "Foto",
+    "en": "Image",
+    "es": "Imagen",
+    "fr": "Image",
+    "it": "Immagine",
+    "ja": "画像",
+    "nl": "Afbeelding",
+    "pt-BR": "Imagem",
+    "zh-CN": "图片",
+    "zh-TW": "圖片"
+    }
+    },
+    {
+    "type": "select",
+    "id": "alignment",
+    "label": {
+    "de": "Fotoausrichtung",
+    "en": "Image alignment",
+    "es": "Alineación de imagen",
+    "fr": "Alignement de l'image",
+    "it": "Allineamento immagine",
+    "ja": "画像アラインメント",
+    "nl": "Afbeelding uitlijnen",
+    "pt-BR": "Alinhamento da imagem",
+    "zh-CN": "图片对齐方式",
+    "zh-TW": "圖片對齊"
+    },
+    "default": "center",
+    "options": [
+    {
+    "value": "top",
+    "label": {
+    "de": "Oben",
+    "en": "Top",
+    "es": "Superior",
+    "fr": "Haut",
+    "it": "In alto",
+    "ja": "上",
+    "nl": "Boven",
+    "pt-BR": "Acima",
+    "zh-CN": "顶部",
+    "zh-TW": "頂部"
+    }
+    },
+    {
+    "value": "center",
+    "label": {
+    "de": "Mitte",
+    "en": "Middle",
+    "es": "Al medio",
+    "fr": "Milieu",
+    "it": "Al centro",
+    "ja": "中央",
+    "nl": "Midden",
+    "pt-BR": "Meio",
+    "zh-CN": "中间",
+    "zh-TW": "中央"
+    }
+    },
+    {
+    "value": "bottom",
+    "label": {
+    "de": "Unten",
+    "en": "Bottom",
+    "es": "Inferior",
+    "fr": "Bas",
+    "it": "In basso",
+    "ja": "下",
+    "nl": "Onder",
+    "pt-BR": "Abaixo",
+    "zh-CN": "底部",
+    "zh-TW": "底部"
+    }
+    }
+    ]
+    },
+    {
+    "type": "select",
+    "id": "hero_layout",
+    "label": {
+    "de": "Layout",
+    "en": "Layout",
+    "es": "Diseño",
+    "fr": "Mise en page",
+    "it": "Layout",
+    "ja": "レイアウト",
+    "nl": "Indeling",
+    "pt-BR": "Layout",
+    "zh-CN": "布局",
+    "zh-TW": "版面配置"
+    },
+    "default": "full_width",
+    "options": [
+    {
+    "label": {
+    "de": "Volle Breite",
+    "en": "Full width",
+    "es": "Ancho completo",
+    "fr": "Pleine largeur",
+    "it": "Intera larghezza",
+    "ja": "全幅",
+    "nl": "Volledige breedte",
+    "pt-BR": "Largura completa",
+    "zh-CN": "全宽",
+    "zh-TW": "全寬度"
+    },
+    "value": "full_width"
+    },
+    {
+    "label": {
+    "de": "Feste Breite",
+    "en": "Fixed width",
+    "es": "Ancho fijo",
+    "fr": "Largeur fixe",
+    "it": "Larghezza fissa",
+    "ja": "固定幅",
+    "nl": "Vaste breedte",
+    "pt-BR": "Largura fixa",
+    "zh-CN": "固定宽度",
+    "zh-TW": "固定寬度"
+    },
+    "value": "fixed_width"
+    }
+    ]
+    },
+    {
+    "type": "select",
+    "id": "hero_size",
+    "label": {
+    "de": "Bereichs-Höhe",
+    "en": "Section height",
+    "es": "Altura de la sección",
+    "fr": "Hauteur de la section",
+    "it": "Altezza sezione",
+    "ja": "セクションの高さ",
+    "nl": "Sectiehoogte",
+    "pt-BR": "Altura da seção",
+    "zh-CN": "分区高度",
+    "zh-TW": "區塊高度"
+    },
+    "default": "medium",
+    "options": [
+    {
+    "label": {
+    "de": "An Bild anpassen",
+    "en": "Adapt to image",
+    "es": "Adaptar a la imagen",
+    "fr": "S'adapter à l'image",
+    "it": "Adatta all'immagine",
+    "ja": "画像に適応する",
+    "nl": "Aanpassen aan afbeelding",
+    "pt-BR": "Adaptar à imagem",
+    "zh-CN": "适应图片",
+    "zh-TW": "配合圖片"
+    },
+    "value": "adapt"
+    },
+    {
+    "label": {
+    "de": "Extra klein",
+    "en": "Extra Small",
+    "es": "Extra pequeña",
+    "fr": "Très petite",
+    "it": "Molto piccola",
+    "ja": "極小",
+    "nl": "Extra klein",
+    "pt-BR": "Extra pequeno",
+    "zh-CN": "特小",
+    "zh-TW": "超小型"
+    },
+    "value": "x-small"
+    },
+    {
+    "label": {
+    "de": "Klein",
+    "en": "Small",
+    "es": "Pequeña",
+    "fr": "Petite",
+    "it": "Small",
+    "ja": "小",
+    "nl": "Klein",
+    "pt-BR": "Pequeno",
+    "zh-CN": "小",
+    "zh-TW": "小型"
+    },
+    "value": "small"
+    },
+    {
+    "label": {
+    "de": "Mitte",
+    "en": "Medium",
+    "es": "Mediana",
+    "fr": "Moyenne",
+    "it": "Medium",
+    "ja": "中",
+    "nl": "Gemiddeld",
+    "pt-BR": "Médio",
+    "zh-CN": "中等",
+    "zh-TW": "中等"
+    },
+    "value": "medium"
+    },
+    {
+    "label": {
+    "de": "Groß",
+    "en": "Large",
+    "es": "Grande",
+    "fr": "Grande",
+    "it": "Large",
+    "ja": "大",
+    "nl": "Groot",
+    "pt-BR": "Grande",
+    "zh-CN": "大",
+    "zh-TW": "大型"
+    },
+    "value": "large"
+    },
+    {
+    "label": {
+    "de": "Extra groß",
+    "en": "Extra Large",
+    "es": "Extra grande",
+    "fr": "Très grande",
+    "it": "Molto grande",
+    "ja": "特大",
+    "nl": "Extra groot",
+    "pt-BR": "Extra grande",
+    "zh-CN": "特大",
+    "zh-TW": "超大型"
+    },
+    "value": "x-large"
+    }
+    ]
+    },
+    {
+    "type": "select",
+    "id": "text_size",
+    "label": {
+    "de": "Textgröße",
+    "en": "Text size",
+    "es": "Tamaño del texto",
+    "fr": "Taille du texte",
+    "it": "Dimensione testo",
+    "ja": "文字サイズ",
+    "nl": "Tekengrootte",
+    "pt-BR": "Tamanho do texto",
+    "zh-CN": "文本大小",
+    "zh-TW": "文字尺寸"
+    },
+    "default": "medium",
+    "options": [
+    {
+    "label": {
+    "de": "Mitte",
+    "en": "Medium",
+    "es": "Mediano",
+    "fr": "Moyenne",
+    "it": "Medium",
+    "ja": "中",
+    "nl": "Gemiddeld",
+    "pt-BR": "Médio",
+    "zh-CN": "中等",
+    "zh-TW": "中等"
+    },
+    "value": "medium"
+    },
+    {
+    "label": {
+    "de": "Groß",
+    "en": "Large",
+    "es": "Grande",
+    "fr": "Grande",
+    "it": "Large",
+    "ja": "大",
+    "nl": "Groot",
+    "pt-BR": "Grande",
+    "zh-CN": "大",
+    "zh-TW": "大型"
+    },
+    "value": "large"
+    }
+    ]
+    },
+    {
+    "type": "text",
+    "id": "title",
+    "label": {
+    "de": "Titel",
+    "en": "Heading",
+    "es": "Título",
+    "fr": "En-tête",
+    "it": "Heading",
+    "ja": "見出し",
+    "nl": "Kop",
+    "pt-BR": "Título",
+    "zh-CN": "标题",
+    "zh-TW": "標題"
+    },
+    "default": {
+    "de": "Foto mit überlegtem Text",
+    "en": "Image with text overlay",
+    "es": "Imagen con texto",
+    "fr": "Image avec superposition de texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "nl": "Foto met tekstoverlay",
+    "pt-BR": "Imagem com sobreposição de texto",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加的圖片"
+    }
+    },
+    {
+    "type": "richtext",
+    "id": "text",
+    "label": {
+    "de": "Text",
+    "en": "Text",
+    "es": "Texto",
+    "fr": "Texte",
+    "it": "Testo",
+    "ja": "テキスト",
+    "nl": "Tekst",
+    "pt-BR": "Texto",
+    "zh-CN": "文本",
+    "zh-TW": "文字"
+    },
+    "default": {
+    "de": "<p>Nutzen Sie überlegten Text, um Kunden über Ihre Marke zu informieren. Wählen Sie Fotos und Text aus, die zu Ihrer Marke passen.</p>",
+    "en": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+    "es": "<p>Usa el texto superpuesto para darles información a tus clientes sobre tu marca. Selecciona imágenes y textos que se relacionen con tu estilo e historia.</p>",
+    "fr": "<p>Utilisez la superposition de texte pour donner un aperçu de votre marque à vos clients. Utilisez une image et du texte qui se rapportent au style et à l'histoire de votre marque.</p>",
+    "it": "<p>Utilizza il testo in sovrapposizione per dare ai clienti informazioni sul tuo brand. Seleziona immagini e testo legati al tuo stile e alla tua storia.</p>",
+    "ja": "<p>オーバーレイテキストを使用して、お客様があなたのブランドについてよく理解できるようにします。あなたのスタイルやストーリーに関連する画像やテキストを選択してください。</p>",
+    "nl": "<p>Gebruik overlay-tekst om uw klanten inzicht te geven in uw merk. Selecteer afbeeldingen en tekst die betrekking hebben op uw stijl en verhaal.</p>",
+    "pt-BR": "<p>Use o texto de sobreposição para apresentar informações sobre sua marca aos clientes. Selecione imagens e textos que reflitam seu estilo e sua história.</p>",
+    "zh-CN": "<p>使用叠加文本让客户深入了解您的品牌。选择与您的风格和故事相关的图片和文本。</p>",
+    "zh-TW": "<p>運用文字疊加讓客戶更加瞭解您的品牌。選擇與您風格和品牌故事相關的圖像和文字。</p>"
+    }
+    },
+    {
+    "type": "text",
+    "id": "button_label",
+    "label": {
+    "de": "Button-Etikett",
+    "en": "Button label",
+    "es": "Etiqueta de botón",
+    "fr": "Texte du bouton",
+    "it": "Etichetta pulsante",
+    "ja": "ボタンラベル",
+    "nl": "Knoplabel",
+    "pt-BR": "Etiqueta do botão",
+    "zh-CN": "按钮标签",
+    "zh-TW": "按鈕標籤"
+    }
+    },
+    {
+    "type": "url",
+    "id": "button_link",
+    "label": {
+    "de": "Button-Etikett",
+    "en": "Button link",
+    "es": "Enlace de botón",
+    "fr": "Lien du bouton",
+    "it": "Link pulsante",
+    "ja": "ボタンリンク",
+    "nl": "Knoplink",
+    "pt-BR": "Link do botão",
+    "zh-CN": "按钮链接",
+    "zh-TW": "按鈕連結"
+    }
+    }
+    ],
+    "presets": [
+    {
+    "name": {
+    "de": "Foto mit überlegtem Text",
+    "en": "header section",
+    "es": "Imagen con texto",
+    "fr": "Image avec superposition de texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "nl": "Foto met tekstoverlay",
+    "pt-BR": "Imagem com sobreposição de texto",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加的圖片"
+    },
+    "category": {
+    "de": "Foto",
+    "en": "image test",
+    "es": "Imagen",
+    "fr": "Image",
+    "it": "Immagine",
+    "ja": "画像",
+    "nl": "Afbeelding",
+    "pt-BR": "Imagem",
+    "zh-CN": "图片",
+    "zh-TW": "圖片"
+    }
+    }
+    ]
+    }
+{% endschema %}
