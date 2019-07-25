@@ -1,6 +1,13 @@
 {% comment %}
   The contents of the collection.liquid template can be found in /sections/collection-template.liquid
 {% endcomment %}
-{% section 'events-header' %}
-{% section 'events-select-location' %}
-{% section 'events-list-item' %}
+
+{% if page_title == 'EVENTS' %}
+  {% section 'events-header' %}
+  <!-- {% section 'events-select-location' %} -->
+  {% section 'events-list-item' %}
+{%- elsif page_title == 'shop' -%}
+  {% section 'collection-shop' %}
+{% else %}
+  {% section 'collection-template' %}
+{% endif %}

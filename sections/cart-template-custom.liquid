@@ -236,7 +236,13 @@
           {% if section.settings.cart_notes_enable %}
             <div class="grid__item medium-up--one-half cart-note">
               <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
-              <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
+              <textarea name="note" id="CartSpecialInstructions"  rows="6" class="cart-note__input">{{ cart.note }}</textarea>
+              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">Are you with a group/party? If so, please provide a designated name and the number of members in your group..</label>
+              <textarea name="note" id="CartMemberOfGroup" rows="2" class="cart-note__input" placeholder="Leave blank if this does not apply.">{{ cart.note }}</textarea>
+              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">Do you have any allergies we should be aware of?</label>
+              <textarea name="note" id="CartHaveAllergies" rows="2" class="cart-note__input" placeholder="Leave blank if this does not apply.">{{ cart.note }}</textarea>
+              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">Do you wish to use any non-alcoholic substitutes?</label>
+              <textarea name="note" id="CartHaveAlcoholic" rows="2" class="cart-note__input" placeholder="Leave blank if this does not apply.">{{ cart.note }}</textarea>
               <div class="cart__submit-controls mobile-version">
                 <input type="submit" name="update"
                   class="btn btn--secondary small--hide cart__submit-control cart-update-button"
